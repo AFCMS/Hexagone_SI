@@ -1,0 +1,12 @@
+[project]
+name = "grpc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+dependencies = [
+    "grpcio",
+    "grpcio-tools",
+]
+
+[tool.uv]
+dev-dependencies = []

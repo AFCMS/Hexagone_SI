@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "ms-azuretools.vscode-docker",
+        "docker.docker",
+        "pbkit.vscode-pbkit"
+    ]
+}
