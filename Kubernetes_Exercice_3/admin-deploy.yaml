@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-deploy
+  labels:
+    run: admin
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: admin
+  template:
+    spec:
+      containers:
+        - name: admin
+          image: adminer:latest
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"

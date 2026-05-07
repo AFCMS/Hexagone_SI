@@ -1,0 +1,5 @@
+resources:
+  - erp.yaml
+  - crm.yaml
+  - hr.yaml
+  - admin-deploy.yaml

@@ -1,0 +1,23 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: crm
+  labels:
+    run: crm
+spec:
+  containers:
+    - name: crm
+      image: postgres:latest
+      env:
+        - name: POSTGRES_DB
+          value: crm
+        - name: POSTGRES_PASSWORD
+          value: password
+      resources:
+        limits:
+          memory: "512Mi"
+          cpu: "500m"
+        requests:
+          memory: "256Mi"
+          cpu: "250m"
